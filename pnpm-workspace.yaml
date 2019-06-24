@@ -1,3 +1,5 @@
 packages:
   - 'packages/*'
-  - 'documentation'
+  - 'packages/php.ts/platforms/*'
+  - 'packages/php.ts/packages/*'
+  - 'packages/php.ts/homepage'

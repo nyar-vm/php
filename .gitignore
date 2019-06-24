@@ -12,10 +12,12 @@ Thumbs.db
 # Node
 dist/
 cache/
+.cache/
 node_modules/
 
 # Rust
 target/
+.cargo/config.toml
 
 # ASM
 *.exe

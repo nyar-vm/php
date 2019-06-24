@@ -1,0 +1,9 @@
+{
+    "cli.intro": "PHP language services: parse, tokens, diagnostics and highlighting.",
+    "cli.cmd.version": "Print the php-napi binding version.",
+    "cli.cmd.parse": "Parse a PHP file and report the syntax tree.",
+    "cli.cmd.tokens": "List lexical tokens with byte spans.",
+    "cli.cmd.check": "Report parser diagnostics for one or more PHP files.",
+    "cli.cmd.highlight": "List keyword/string/number/comment/identifier spans.",
+    "cli.opt.json": "Print machine-readable JSON."
+}

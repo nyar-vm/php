@@ -1,0 +1,23 @@
+[package]
+name = "php-napi"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "PHP Node-API export library: parsing, lexing and highlighting over Boost `language.php`"
+
+[lib]
+name = "php_napi"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+language-php = { workspace = true }
+data-text-core = { workspace = true }
+data-text-php = { workspace = true }
+napi = { workspace = true }
+napi-derive = { workspace = true }
+
+[build-dependencies]
+napi-build = { workspace = true }

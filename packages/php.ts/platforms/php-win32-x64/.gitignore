@@ -1,0 +1,5 @@
+lib/
+*.node
+php_napi.dll
+libphp_napi.so
+libphp_napi.dylib

@@ -1,0 +1,48 @@
+{
+    "name": "@nyar/php",
+    "version": "0.0.1",
+    "description": "PHP language services - parser, tokens, diagnostics and highlighting (Node-API)",
+    "type": "module",
+    "license": "MPL-2.0",
+    "main": "./dist/index.js",
+    "exports": {
+        ".": "./dist/index.js",
+        "./cli": "./dist/cli/php-cli.js",
+        "./native": "./dist/native.js"
+    },
+    "bin": {
+        "php": "bin/php.mjs"
+    },
+    "files": [
+        "bin",
+        "dist",
+        "src",
+        "locales",
+        "readme.md"
+    ],
+    "dependencies": {
+        "@vmz/commander": "^0.3.18"
+    },
+    "optionalDependencies": {
+        "@nyar/php-darwin-arm64": "workspace:*",
+        "@nyar/php-darwin-x64": "workspace:*",
+        "@nyar/php-linux-x64": "workspace:*",
+        "@nyar/php-win32-x64": "workspace:*"
+    },
+    "scripts": {
+        "build": "node ../../../../scripts/build-npm-package-js.mjs packages/php.ts/packages/php",
+        "prepack": "node ../../../../scripts/build-npm-package-js.mjs packages/php.ts/packages/php && node ../../../../scripts/prepare-npm-publish.mjs"
+    },
+    "engines": {
+        "node": ">=22.18.0"
+    },
+    "keywords": ["php", "parser", "language-server", "vmz"],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nyar-vm/php.git",
+        "directory": "packages/php.ts/packages/php"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "@nyar/php-skills",
+    "version": "0.0.1",
+    "description": "Agent Skills for using the PHP language services package",
+    "type": "module",
+    "license": "MPL-2.0",
+    "files": [
+        "skills",
+        "README.md"
+    ],
+    "scripts": {
+        "typecheck": "node -e \"console.log('docs-only skill package')\""
+    },
+    "keywords": ["php", "skills", "agent", "language-services"],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nyar-vm/php.git",
+        "directory": "packages/php.ts/packages/php-skills"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
